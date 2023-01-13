@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Result</title>
+</head>
+<body>
+<h1>{{ offName }}</h1>
+<p>{{ weather }}°C, {{ capCity }}</p>
+<p><img src={{wurl}} alt=""></p>
+<hr>
+<p><img src={{flags}} alt=""></p>
+<hr>
+<p>Native Naming: {{ natName }}</p>
+<p>Currency: {{ currency }}</p>
+<p>Capital city: {{ capCity }}</p>
+<p>Region: {{ region }} ({{ subregion }})</p>
+<p>Languages: {{ lang }}</p>
+<p>Population: {{ population }}</p>
+<p>Area: {{ area }}</p>
+<hr>
+<button><a href="{{ url_for('index') }}" >Go back</a></button>
+</body>
+</html>
